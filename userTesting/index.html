@@ -1,0 +1,166 @@
+<!DOCTYPE html><!-- ================================================================
+WELCOME TO THE WEBMAKER TEACHING KIT TEMPLATE!
+Use this template to create your own teaching kit, lesson plan or educational resource.
+Edit the HTML below to add your own content, links and images.
+Code comments like these will help with hints and guides.
+Need help? Start here: http://mzl.la/teachingkit-tips
+================================================================ -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta content="teach-kit" name="webmaker:tags">
+  <link href="https://stuff.webmaker.org/webmaker-kits/v2/css/style.css" media="all" rel="stylesheet" type="text/css">
+<!-- =============================== -->
+<!-- ADD YOUR TITLE HERE -->
+  <title>User Testing</title>
+<!-- =============================== -->
+</head>
+<body>
+  <div id="ribbon">Teaching Kit</div>
+<!-- =============================== -->
+<!-- HEADER IMAGE -->
+<!-- Just paste the URL for your image in the "src" attribute below -->
+  <header style="background-image:url(https://s3-us-west-2.amazonaws.com/webmaker-kits/learning%402x.jpg); margin-bottom: 2em;">
+ <!-- =============================== -->
+    <hgroup>
+<!-- =============================== -->
+<!-- TITLE AND SUMMARY -->
+      <h1>User Testing</h1>
+      <h2>User testing can be a simple way to ensure the quality of a software project by identifying problems while they're still cheap & easy to fix. In this lesson, we'll explore the details of how, when and why to perform effective user testing in a lab environment.</h2>
+<!-- =============================== -->
+<!-- Add your name here -->
+      <h3 id="made-by">Made by the <a href="http://mozillascience.org/">Mozilla Science Lab</a></h3>
+<!-- =============================== -->
+    </hgroup>
+  </header>
+  <div class="wrapper">
+    <div class="row">
+      <main>
+<!-- =============================== -->
+<!-- INTRO -->
+        <h1 id='Introduction'>Introduction</h1>
+
+        <p>When working on anything we hope will someday be fit for consumption by someone else, getting a second (and n<sup>th</sup>) pair of eyes is an invaluable technique for identifying errors and ensuring quality. This is ancient practice when we write a manuscript for a journal submission; our lesson on code review systematizes ways to do this for code; but what about when we're building something intended to be directly <em>used</em> by someone else, like a library of functions or a control interface for a piece of equipment?</p>
+
+        <p>In this case, we can't rely on the linearity of text and the rules of linguistic presentation and argument like we could for our manuscript; nor can we lay out meaningful cardinal rules to codify digestible patterns like we did for code review, since not only is every tool fundamentally different, but every user will experience it differently - with different interpretations of what it presents to us, and different goals for its use. Those users must be central to our estimation of the usability of a tool. We need a way to ensure that the way our users naturally engage with our tool leads to them being able to effectively use it, with minimal frustration; we need to ensure that we are communicating our <em>intentions</em> on usage to our user (and no, they will not read the instructions).</p>
+
+
+        <h2>You Are Not Your User</h2>
+        <p>Maybe the greatest hurdle to overcome when thinking about your users' experience is the one presented by your own perspective; of course the use of the tool you made is painfully obvious to you - but rest assured, it is not to your users. Danger lies in the temptation to assume otherwise.</p>
+
+        <p>Consider: we think of software as allowing us to <em>do</em> things - but this is always a huge abstraction. It's very unlikely that two people will create an abstract conceptual model of a task that looks the same when codified as a piece of software, and this becomes more true the more esoteric a task we hope to capture in our software tools. Most people can successfully navigate consumer websites because we have adopted cultural norms for the relevant abstractions that people have come to expect (navigation in the header, legal information in the footer, for example), but in the sciences, there is no such common vocabulary of convenient abstractions; we are especially in danger of leaving our users behind, if we assume they think exactly as we do.</p>
+
+
+        <h1 id='howTo'>How To</h1>
+        <p>The core question we want to answer during a user testing session is simply, 'can our users complete a set of tasks assigned to them without help?' But, we'd also like to get some diagnostic power out of the exercise, too - when they can't complete their tasks, why not? What has confused them, distracted them, or otherwise defeated them? A cost-effective and simple strategy is the <em>think-aloud protocol</em>.</p>
+
+        <h2>Think-Aloud Protocol</h2>
+        <p>A round of think-aloud consists of two steps:</p>
+        <div class='well'>
+          <ol>
+            <li>Give the user a task.</li>
+            <li>Ask the user to say their thought processes out loud while attempting to complete the task.</li>
+          </ol>
+        </div>
+
+        <p>The beauty of this process is that it emphasizes calling out places where users' intuition, expectations and inferences diverge from those of the author of the tool under scrutiny, in a formalism that is very easy to execute and doesn't contain complicated or unnatural structure that might bias the user's behavior.</p>
+
+        <p>When performing think-aloud, the things we most want to discover are why users do what they do, and how they are interpreting the things presented to them; prompting them to this effect can help keep the commentary focused, but <em>do not</em> lead them beyond these prompts! The point is to see how they understand your tool in the absence of expert guidance.</p>
+
+        <h3>Conducting Think-Aloud</h3>
+        <p>Think-aloud is very simple in principle, but there are a number of ways it can go wrong, and a number of strategies for improving its effectiveness. Consider the following when running one of these tests:</p>
+
+        <div class='well'>
+          <ul>
+            <li>Give authentic tasks that don't reference the tool directly. Phrase your tasks as something the user would want to do; 'turn on detector number seven'. Don't lead them with reference to the tool itself ('look in the "Detectors" menu for the switch for detector seven.')</li>
+
+            <li>People are often afraid of looking dumb; if self-conciousness causes them to clam up, this exercise is doomed. Try the following:
+              <ul>
+                <li>Only have yourself and the user in the room while the test is running.</li>
+                <li>Explain to the user before the test starts that it is the <em>software</em> that's being tested, not them; make sure they understand that if they can't complete one of the tasks, it's your fault - not theirs.</li>
+                <li>Explain to the user that you won't be able to help them while they work, since that's part of the study.</li>
+              </ul>
+            </li>
+
+            <li><strong>Do not</strong> lead the user once they start on a task, no matter how tempting! This cannot be repeated enough.</li>
+
+            <li>Beyond their spoken thoughts, users are also communicating to you with body language. Pay close attention to them as they work to see if they seem frustrated or annoyed, and listen to their tone as they describe their actions - do they sound confident, or do they sound like they're guessing?</li>
+          </ul>
+        </div>
+
+        <p>If you are able to put users at ease enough to honestly communicate their thoughts while they use your tool, and you let your user show you how they encounter your tool and the tasks set to them without interfering, think-aloud will consistently yield surprising and useful insights into how your tool will work out in the wild.</p>
+
+        <h1 id='planning'>Planning User Testing</h1>
+        <p>In the last section, we outlined how to conduct a single user test with a single user - but how do we formulate an effective battery of user tests that gives more useful information without becoming an overwhelming burden?</p>
+
+        <h2>Who should participate?</h2>
+        <p>User testing is best done by a typical user of your software; it's important that your colleagues in your field of research can use your tool, but if your relatives can't, it probably doesn't matter. Research groups often have it easy in this regard - grabbing students and colleagues from your research group, department or lab is perfect.</p>
+
+        <p>If possible, if you do multiple rounds of user testing, it might make sense to try and get new groups each time, so results aren't biased by previous experience.</p>
+
+        <h2>How big should a testing session be?</h2>
+        <p>R. A. Virzi <a href='http://hfs.sagepub.com/content/34/4/457.abstract'>pointed out</a> that for a user testing session involving <em>n</em> participants, each with an individual probability <em>p</em> of failing to complete a given task, the probability that not everyone will succeed at the task (thus uncovering the problem) is 1 - (1 - <em>p</em>)<sup><em>n</em></sup>. So, if a 'serious' problem is one that a third of all users will fail a task because of, then testing even five users will reveal this problem 87% of the time.</p>
+
+        <p>So, no need for enormous usability studies - assuming you're confident you aren't suffering from biases due to low sampling statistics, and you're comfortable acknowledging something as a problem if even a single user stumbles over it. In order to ameliorate these potential biases, again - consider running several small, short user testing sessions with only around five participants each - but try and make them a different five each time.</p>
+
+        <h2>When should user testing be done?</h2>
+        <p>Much like code review, user testing works best in regular, small chunks. A huge battery of tests will conflate the exhaustion of your test subjects with usability problems in your tool, and will become an unreasonable demand on your time. A good pace for user testing is a round of five participants every few features - by keeping both numbers small, the sessions are easy to organize and less of a disruption for all involved.</p>
+
+        <p>Another thing to keep in mind, is that one of the key values of user testing is that it can flag problems while they're still relatively easy to solve. As soon as you have an implementation of something that a user could possibly try out, let them - that way, if it turns out their intuition is wildly different than what you expected, plans can be changed before too much investment has been made.</p>
+
+        <p>To summarize:</p>
+        <div class='well'>
+          <ul>
+            <li><strong>Test early, and test often</strong>: test only a few new tasks at a time, and test them as soon as possible.</li>
+            <li><strong>Keep it small & informal</strong>: five participants is probably enough for a single round of testing to catch the majority of problems.</li>
+            <li><strong>Use your colleagues</strong>: your lab mates are ideal test subjects - try, if possible, to pick different ones for each round of testing.</li>
+          </ul>
+        </div>
+
+        <h1 id='goWrong'>When Things Go Wrong</h1>
+        <p>Sometimes, a new feature fails user testing miserably - users are baffled by what's presented to them, and no clear path to task completion presents itself. Congratulations, you've succeeded! This befuddlement has occurred before release and in the lab while you can still fix it - but how? Two gross strategies come to mind:</p>
+
+        <ul>
+          <li><strong>Post-testing discussion</strong> with your test subjects on how they imagine they'd go about a task in software can be a valuable final step; think-aloud gives people a voice for their <em>reactions</em> to what you've built, but not their <em>expectations</em>. Once the test is complete, sit down with your subjects individually or as a group, and discuss how they imagine they would go about completing a task; this may give you some insight into what your users expect. One useful exercise to help clarify their understanding can be to have them all draw <a href='http://mozillascience.github.io/instructorTraining/knowledgeAndExpertise/index.html#A-Cartoon-of-Knowledge'>concept maps</a> of the task in question; comparing concept maps is a very effective strategy in education to see where people's mental models of an idea differ, and may offer some insight into the conceptual context in which they are trying to use your tool.</li>
+
+          <li><strong>Look for common patterns</strong> that you can leverage to make your tool more familiar to your users. We mentioned above the vocabulary of commercial websites and how those familiar patterns help people navigate the web - while science doesn't have the same luxury, there are some things we can inherit. For example, when building a visual user interface for something, many of the same patterns you've seen on the web (whether you're building your UI in the browser or not) can be echoed - if there's a field to input data, highlight it with an outline when it's active; if navigation and branding are present, put them at the top. Design patterns that promote usability and familiarity across projects exist for command-line tools and libraries, as well; every Python function should have a docstring, and most every C++ project should have a Makefile to compile it. Perhaps other patterns of representation or interaction exist in your subfield; identifying these patterns and strictly sticking to them can help new users use your tool effectively, intuitively and quickly, so we can all get down to the science we set out to do.</li>
+        </ul>
+
+
+      <!--h2>Exercise</h2>
+      <ol class="agenda">
+        <li><a href="feedback.html">Feedback pt. 1</a></li>
+      </ol-->
+
+      </main>
+
+      <aside>
+<!-- =============================== -->
+<!-- Contents -->
+        <section class="teach-list">
+          <h2>Contents</h2>
+          <ol>
+            <li><a href='#Introduction'>Introdcution</a></li>
+            <li><a href='#howTo'>How To</a></li>
+            <li><a href='#planning'>Planning User Testing</a></li>
+            <li><a href='#goWrong'>When Things Go Wrong</a></li>
+          </ol>
+        </section>
+<!-- =============================== -->
+<!-- Activities -->
+        <section class="teach-list">
+          <h2>Activities</h2>
+          <ul>
+            <!--li><a href="conceptMapping.html">Concept Mapping, pts. 1 & 2</a></li>
+            <li><a href="feedback.html">Feedback pt. 1</a></li-->
+          </ul>
+        </section>
+<!-- =============================== -->
+
+      </aside>
+    </div>
+  </div>
+  <script src="https://stuff.webmaker.org/webmaker-kits/v2/js/main.min.js"></script>
+</body>
+</html>
