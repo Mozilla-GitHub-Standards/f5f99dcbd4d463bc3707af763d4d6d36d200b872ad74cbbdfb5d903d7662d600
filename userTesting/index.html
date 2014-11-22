@@ -13,7 +13,7 @@ Need help? Start here: http://mzl.la/teachingkit-tips
   <link href="https://stuff.webmaker.org/webmaker-kits/v2/css/style.css" media="all" rel="stylesheet" type="text/css">
 <!-- =============================== -->
 <!-- ADD YOUR TITLE HERE -->
-  <title>User Testing</title>
+  <title>Usability Testing</title>
 <!-- =============================== -->
 </head>
 <body>
@@ -26,8 +26,8 @@ Need help? Start here: http://mzl.la/teachingkit-tips
     <hgroup>
 <!-- =============================== -->
 <!-- TITLE AND SUMMARY -->
-      <h1>User Testing</h1>
-      <h2>User testing can be a simple way to ensure the quality of a software project by identifying problems while they're still cheap & easy to fix. In this lesson, we'll explore the details of how, when and why to perform effective user testing in a lab environment.</h2>
+      <h1>Usability Testing</h1>
+      <h2>Usability testing can be a simple way to ensure the quality of a software project by identifying problems while they're still cheap & easy to fix. In this lesson, we'll explore the details of how, when and why to perform effective usability testing in a lab environment.</h2>
 <!-- =============================== -->
 <!-- Add your name here -->
       <h3 id="made-by">Made by the <a href="http://mozillascience.org/">Mozilla Science Lab</a></h3>
@@ -43,8 +43,7 @@ Need help? Start here: http://mzl.la/teachingkit-tips
 
         <p>When working on anything we hope will someday be fit for consumption by someone else, getting a second (and n<sup>th</sup>) pair of eyes is an invaluable technique for identifying errors and ensuring quality. This is ancient practice when we write a manuscript for a journal submission; our lesson on code review systematizes ways to do this for code; but what about when we're building something intended to be directly <em>used</em> by someone else, like a library of functions or a control interface for a piece of equipment?</p>
 
-        <p>In this case, we can't rely on the linearity of text and the rules of linguistic presentation and argument like we could for our manuscript; nor can we lay out meaningful cardinal rules to codify digestible patterns like we did for code review, since not only is every tool fundamentally different, but every user will experience it differently - with different interpretations of what it presents to us, and different goals for its use. Those users must be central to our estimation of the usability of a tool. We need a way to ensure that the way our users naturally engage with our tool leads to them being able to effectively use it, with minimal frustration; we need to ensure that we are communicating our <em>intentions</em> on usage to our user (and no, they will not read the instructions).</p>
-
+        <p>Active use is different than passive consumption. In this case, we can't rely on the linearity of text and the rules of linguistic presentation and argument like we could for our manuscript; nor can we lay out meaningful cardinal rules to codify digestible patterns like we did for code review, since not only is every tool fundamentally different, but every user will experience it differently - with different interpretations of what it is presenting, and different goals for its use. In order to enable the intentions of our users, which is what a good tool is supposed to do, we have to be able to match their intuition on that tool's use, and that requires us to <em>empathize</em> with them in order to begin to understand that intuition. Usability testing is a framework for communicating with our users that helps us build that empathy and measure that intuition, so we can build tools that get out of our users' way and <em>just work</em>.</p>
 
         <h2>You Are Not Your User</h2>
         <p>Maybe the greatest hurdle to overcome when thinking about your users' experience is the one presented by your own perspective; of course the use of the tool you made is painfully obvious to you - but rest assured, it is not to your users. Danger lies in the temptation to assume otherwise.</p>
@@ -53,7 +52,7 @@ Need help? Start here: http://mzl.la/teachingkit-tips
 
 
         <h1 id='howTo'>How To</h1>
-        <p>The core question we want to answer during a user testing session is simply, 'can our users complete a set of tasks assigned to them without help?' But, we'd also like to get some diagnostic power out of the exercise, too - when they can't complete their tasks, why not? What has confused them, distracted them, or otherwise defeated them? A cost-effective and simple strategy is the <em>think-aloud protocol</em>.</p>
+        <p>The core question we want to answer during a usability testing session is simply, 'can our users complete a set of tasks assigned to them without help?' But, we'd also like to get some diagnostic power out of the exercise, too - when they can't complete their tasks, why not? What has confused them, distracted them, or otherwise defeated them? A cost-effective and simple strategy is the <em>think-aloud protocol</em>.</p>
 
         <h2>Think-Aloud Protocol</h2>
         <p>A round of think-aloud consists of two steps:</p>
@@ -96,23 +95,23 @@ Need help? Start here: http://mzl.la/teachingkit-tips
           <li><a href="thinkAloud.html">Think-Aloud Protocol</a></li>
         </ol>
 
-        <h1 id='planning'>Planning User Testing</h1>
-        <p>In the last section, we outlined how to conduct a single user test with a single user - but how do we formulate an effective battery of user tests that gives more useful information without becoming an overwhelming burden?</p>
+        <h1 id='planning'>Planning Usability Testing</h1>
+        <p>In the last section, we outlined how to conduct a single usability test with a single user - but how do we formulate an effective battery of usability tests that gives more useful information without becoming an overwhelming burden?</p>
 
         <h2>Who should participate?</h2>
-        <p>User testing is best done by a typical user of your software; it's important that your colleagues in your field of research can use your tool, but if your relatives can't, it probably doesn't matter. Research groups often have it easy in this regard - grabbing students and colleagues from your research group, department or lab is perfect.</p>
+        <p>Usability testing is best done by a typical user of your software; it's important that your colleagues in your field of research can use your tool, but if your relatives can't, it probably doesn't matter. Research groups often have it easy in this regard - grabbing students and colleagues from your research group, department or lab is perfect.</p>
 
-        <p>If possible, if you do multiple rounds of user testing, it might make sense to try and get new groups each time, so results aren't biased by previous experience.</p>
+        <p>If possible, if you do multiple rounds of usability testing, it might make sense to try and get new groups each time, so results aren't biased by previous experience.</p>
 
         <h2>How big should a testing session be?</h2>
-        <p>R. A. Virzi <a href='http://hfs.sagepub.com/content/34/4/457.abstract'>pointed out</a> that for a user testing session involving <em>n</em> participants, each with an individual probability <em>p</em> of failing to complete a given task, the probability that not everyone will succeed at the task (thus uncovering the problem) is 1 - (1 - <em>p</em>)<sup><em>n</em></sup>. So, if a 'serious' problem is one that a third of all users will fail a task because of, then testing even five users will reveal this problem 87% of the time.</p>
+        <p>R. A. Virzi <a href='http://hfs.sagepub.com/content/34/4/457.abstract'>pointed out</a> that for a usability testing session involving <em>n</em> participants, each with an individual probability <em>p</em> of failing to complete a given task, the probability that not everyone will succeed at the task (thus uncovering the problem) is 1 - (1 - <em>p</em>)<sup><em>n</em></sup>. So, if a 'serious' problem is one that a third of all users will fail a task because of, then testing even five users will reveal this problem 87% of the time.</p>
 
-        <p>So, no need for enormous usability studies - assuming you're confident you aren't suffering from biases due to low sampling statistics, and you're comfortable acknowledging something as a problem if even a single user stumbles over it. In order to ameliorate these potential biases, again - consider running several small, short user testing sessions with only around five participants each - but try and make them a different five each time.</p>
+        <p>So, no need for enormous usability studies - assuming you're confident you aren't suffering from biases due to low sampling statistics, and you're comfortable acknowledging something as a problem if even a single user stumbles over it. In order to ameliorate these potential biases, again - consider running several small, short usability testing sessions with only around five participants each - but try and make them a different five each time.</p>
 
-        <h2>When should user testing be done?</h2>
-        <p>Much like code review, user testing works best in regular, small chunks. A huge battery of tests will conflate the exhaustion of your test subjects with usability problems in your tool, and will become an unreasonable demand on your time. A good pace for user testing is a round of five participants every few features - by keeping both numbers small, the sessions are easy to organize and less of a disruption for all involved.</p>
+        <h2>When should usability testing be done?</h2>
+        <p>Much like code review, usability testing works best in regular, small chunks. A huge battery of tests will conflate the exhaustion of your test subjects with usability problems in your tool, and will become an unreasonable demand on your time. A good pace for usability testing is a round of five participants every few features - by keeping both numbers small, the sessions are easy to organize and less of a disruption for all involved.</p>
 
-        <p>Another thing to keep in mind, is that one of the key values of user testing is that it can flag problems while they're still relatively easy to solve. As soon as you have an implementation of something that a user could possibly try out, let them - that way, if it turns out their intuition is wildly different than what you expected, plans can be changed before too much investment has been made.</p>
+        <p>Another thing to keep in mind, is that one of the key values of usability testing is that it can flag problems while they're still relatively easy to solve. As soon as you have an implementation of something that a user could possibly try out, let them - that way, if it turns out their intuition is wildly different than what you expected, plans can be changed before too much investment has been made.</p>
 
         <p>To summarize:</p>
         <div class='well'>
@@ -124,12 +123,20 @@ Need help? Start here: http://mzl.la/teachingkit-tips
         </div>
 
         <h1 id='goWrong'>When Things Go Wrong</h1>
-        <p>Sometimes, a new feature fails user testing miserably - users are baffled by what's presented to them, and no clear path to task completion presents itself. Congratulations, you've succeeded! This befuddlement has occurred before release and in the lab while you can still fix it - but how? Two gross strategies come to mind:</p>
+        <p>Sometimes, a new feature fails usability testing miserably - users are baffled by what's presented to them, and no clear path to task completion presents itself. Congratulations, you've succeeded! This befuddlement has occurred before release and in the lab while you can still fix it - but how? Two gross strategies come to mind:</p>
 
         <ul>
           <li><strong>Post-testing discussion</strong> with your test subjects on how they imagine they'd go about a task in software can be a valuable final step; think-aloud gives people a voice for their <em>reactions</em> to what you've built, but not their <em>expectations</em>. Once the test is complete, sit down with your subjects individually or as a group, and discuss how they imagine they would go about completing a task; this may give you some insight into what your users expect. One useful exercise to help clarify their understanding can be to have them all draw <a href='http://mozillascience.github.io/instructorTraining/knowledgeAndExpertise/index.html#A-Cartoon-of-Knowledge'>concept maps</a> of the task in question; comparing concept maps is a very effective strategy in education to see where people's mental models of an idea differ, and may offer some insight into the conceptual context in which they are trying to use your tool.</li>
 
           <li><strong>Look for common patterns</strong> that you can leverage to make your tool more familiar to your users. We mentioned above the vocabulary of commercial websites and how those familiar patterns help people navigate the web - while science doesn't have the same luxury, there are some things we can inherit. For example, when building a visual user interface for something, many of the same patterns you've seen on the web (whether you're building your UI in the browser or not) can be echoed - if there's a field to input data, highlight it with an outline when it's active; if navigation and branding are present, put them at the top. Design patterns that promote usability and familiarity across projects exist for command-line tools and libraries, as well; every Python function should have a docstring, and most every C++ project should have a Makefile to compile it. Perhaps other patterns of representation or interaction exist in your subfield; identifying these patterns and strictly sticking to them can help new users use your tool effectively, intuitively and quickly, so we can all get down to the science we set out to do.</li>
+        </ul>
+
+        <h2 id='reading'>Further Reading</h2>
+        <ul>
+          <li>A Usability Testing <a href='http://blog.uxpin.com/5698/user-testing-design-6-quantitative-insights-yelps-website/'>Case Study</a> on Yelp</li>
+          <li><a href='http://www.usability.gov/how-to-and-tools/methods/usability-testing.html'>More perspectives</a> on usability testing from the US. Dept. of Health and Human Services</li>
+          <li><a href='http://www.usertesting.com/blog/2014/11/17/how-to-write-great-questions-for-your-next-user-test/'>Writing Good Usability Testing Questions</a>, from a user-testing service.</li>
+
         </ul>
 
       </main>
@@ -142,8 +149,9 @@ Need help? Start here: http://mzl.la/teachingkit-tips
           <ol>
             <li><a href='#Introduction'>Introdcution</a></li>
             <li><a href='#howTo'>How To</a></li>
-            <li><a href='#planning'>Planning User Testing</a></li>
+            <li><a href='#planning'>Planning Usability Testing</a></li>
             <li><a href='#goWrong'>When Things Go Wrong</a></li>
+            <li><a href='#reading'>Further Reading</a></li>
           </ol>
         </section>
 <!-- =============================== -->
